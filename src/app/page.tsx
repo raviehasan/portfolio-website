@@ -296,21 +296,21 @@ export default function Home() {
             >
               <span className="gradient-text">Ravie Hasan Abud</span>
             </motion.h1>
-            <motion.p 
+            {/* <motion.p 
               className="text-base sm:text-lg md:text-xl lg:text-2xl text-text-muted mb-6 sm:mb-8"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
             >
-              Computer Science Student | AI, ML, and Software Development Enthusiast
-            </motion.p>
+              A Computer Science Student | AI, Data Science, and Software Enthusiast
+            </motion.p> */}
             <motion.p 
               className="text-sm sm:text-base md:text-base lg:text-lg text-text-muted mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed px-2"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1 }}
             >
-              Ravie is a dedicated final-year computer science student at Universitas Indonesia with a strong passion for artificial intelligence, machine learning, and software development. Experienced in building full-stack applications and conducting research-driven machine learning projects. Proficient in Python, Java, JavaScript, Dart, and Go, with experience using frameworks such as Spring Boot, Flutter, Django, and React. Known for being responsible, detail-oriented, eagerness to embrace new challenges, and highly committed to continuous learning. He is currently seeking professional opportunities to grow and make a meaningful impact in the tech industry.
+              Ravie is a dedicated final-year <span className="text-white">computer science</span> student at Universitas Indonesia with a strong passion for <span className="text-white">artificial intelligence</span>, <span className="text-white">data science & analytics</span>, and <span className="text-white">software development</span>. Experienced in building <span className="text-white">full-stack applications</span> and conducting research-driven <span className="text-white">machine learning projects</span>. Proficient in <span className="text-white">Python</span>, <span className="text-white">Java</span>, <span className="text-white">JavaScript</span>, <span className="text-white">Dart</span>, and <span className="text-white">Go</span>, with experience using frameworks such as <span className="text-white">Spring Boot</span>, <span className="text-white">Flutter</span>, <span className="text-white">Django</span>, and <span className="text-white">React</span>. Known for being responsible, detail-oriented, eagerness to embrace new challenges, and highly committed to continuous learning. He is looking for opportunities to grow and contribute meaningfully in the tech field.
             </motion.p>
 
             {/* Social Links */}
@@ -360,7 +360,7 @@ export default function Home() {
                 <BookOpen size={20} className="group-hover:text-accent transition-colors mb-1 sm:mb-0 sm:mr-2 w-5 h-5 sm:w-6 sm:h-6" />
                 <span className="text-xs sm:text-sm">Medium</span>
               </motion.a>
-              <motion.a 
+              {/* <motion.a 
                 href="/CV - Ravie Hasan Abud.pdf" 
                 download="CV - Ravie Hasan Abud.pdf"
                 className="social-link group bg-accent/10 border-accent/30 flex-col sm:flex-row"
@@ -372,7 +372,7 @@ export default function Home() {
               >
                 <Download size={20} className="group-hover:text-accent transition-colors mb-1 sm:mb-0 sm:mr-2 w-5 h-5 sm:w-6 sm:h-6" />
                 <span className="text-xs sm:text-sm">CV</span>
-              </motion.a>
+              </motion.a> */}
             </motion.div>
           </motion.div>
         </div>
