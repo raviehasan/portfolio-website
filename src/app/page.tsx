@@ -36,7 +36,7 @@ export default function Home() {
     "Frameworks & Libraries": ["Spring Boot", "Django", "Flutter", "React", "Vue.js", "shadcn/ui"],
     "AI & Data Science": ["PyTorch", "Scikit-learn", "Hugging Face", "OpenSearch", "Matplotlib", "Pandas", "NumPy"],
     "Databases & Tools": ["PostgreSQL", "OpenSearch", "Figma", "Jira", "Microsoft Office", "Canva"],
-    "DevOps & Development": ["GCP", "GitHub Actions", "Docker", "System Design", "Datadog", "Sentry", "SonarQube"]
+    "DevOps & Development": ["Google Cloud Platform", "GitHub Actions", "Docker", "System Design (EERD, Class, Context)", "SonarQube", "Datadog", "Sentry", "Google Analytics"]
   };
 
   const projects = [
@@ -44,12 +44,19 @@ export default function Home() {
       title: "Talent Pool Web Application",
       tech: ["Spring Boot", "PostgreSQL", "React", "TypeScript", "Vite", "SonarQube", "Datadog", "Sentry", "Google Analytics"],
       description: [
-        "Tes",
+        "Partnered up with Rencanakan.id to design and build a scalable recruitment platform, streamlining the workflow between Talents and Contractors.",
+        "Delivered features such as digital professional profiles, contractor-side candidate filtering, and WhatsApp integration.",
+        "Applied Test-Driven Development (TDD), implemented secure coding practices, enforced code quality with SonarQube code analysis, and achieved 100% test coverage through unit and integration tests for production readiness.",
+        "Designed reusable UI components using shadcn/ui, aligned with usability principles, and documented via Storybook.",
+        "Integrated CI/CD pipelines with dev-staging-production workflows; implemented full monitoring and observability using Datadog (performance), Sentry (error and logging), Google Analytics (users’ behavior), and custom metrics and alerting.",
+        "Worked closely in a cross-functional team and published 10 technical articles covering software architecture, testing, design patterns, team collaboration, software best practices, and many more on medium.com/@ravieabud.",
       ],
       links: {
-        pitchdeck: "#",
-        backend: "#",
-        demo: "#"
+        "Pitch Deck": "https://drive.google.com/file/d/17GnQ3p1lTweQB1L258jcUGSCGI3yGRKt/view?usp=sharing",
+        "Frontend Repo": "https://github.com/Rencanakan-id/rencanakan-talent_pool-frontend",
+        "Backend Repo": "https://github.com/Rencanakan-id/rencanakan-talent_pool-backend",
+        "Talents Web": "https://rencanakanid-prod.netlify.app/",
+        "Contractors Web": "https://rencanakan-system.netlify.app/",
       },
       icon: <Code className="w-6 h-6" />
     },
@@ -57,11 +64,15 @@ export default function Home() {
       title: "Credit Card Fraud Detection",
       tech: ["Python", "Scikit-learn", "Reinforcement Learning"],
       description: [
-        "Tes",
+        "Built a hybrid fraud detection framework combining supervised and reinforcement learning to simulate dynamic adversarial behavior in credit card transactions.",
+        "Developed a fraud environment modeled as a Markov Decision Process, where a fraudster agent (Monte Carlo and SARSA) interacts with a configurable classifier to maximize fraudulent gains.",
+        "Trained multiple supervised classifiers on engineered features and integrated the best-performing model into a dynamic reinforcement learning simulation environment with adjustable detection thresholds.",
+        "Conducted extensive experiments analyzing agent policy adaptation under static and dynamic threshold scenarios; showed that frequent threshold changes disrupt convergence and reduce fraud impact.",
+        "Led a comparative study between Monte Carlo and SARSA agents, highlighting trade-offs in adaptability and learning stability under non-stationary conditions.",
       ],
       links: {
-        paper: "#",
-        code: "#"
+        "Report and Analysis Paper": "https://drive.google.com/file/d/1IO26ONwFoqQdlIPCFK6X3pAwVQg1o4cI/view?usp=sharing",
+        "Codes Repo": "https://github.com/raviehasan/cc-fraud-detection"
       },
       icon: <Brain className="w-6 h-6" />
     },
@@ -69,11 +80,15 @@ export default function Home() {
       title: "Multilingual NLI with Transformers",
       tech: ["PyTorch", "Hugging Face", "RemBERT"],
       description: [
-        "Tes",
+        "Engineered a complete PyTorch pipeline to fine-tune and evaluate encoder-only transformer models.",
+        "Implemented advanced training strategies, such as gradient accumulation, AdamW optimizer with a cosine scheduler.",
+        "Applied regularization techniques and early stopping to improve models’ generalization and prevent overfitting.",
+        "Conducted a rigorous ablation study on RemBERT model, demonstrating the critical role of Multi-Head Attention and Layer Normalization in contextual learning and training stability.",
+        "Performed in-depth analysis using confusion matrices, error breakdowns, and t-SNE visualizations; authored a comprehensive report highlighting the effect of architectural and hyperparameter choices.",
       ],
       links: {
-        report: "#",
-        code: "#"
+        "Report and Analysis Slide": "https://drive.google.com/file/d/1swDHfAothXzg004rP552ZUBHntQ9ij7V/view?usp=sharing",
+        "Codes Repo": "https://github.com/raviehasan/natural-language-inference-classification"
       },
       icon: <Zap className="w-6 h-6" />
     },
@@ -81,11 +96,15 @@ export default function Home() {
       title: "ESEMPEHA Search Engine",
       tech: ["Django", "OpenSearch", "Docker", "LLMs"],
       description: [
-        "Tes",
+        "Developed an advanced information retrieval system for scientific facts, built with Django and powered by OpenSearch, integrating both traditional keyword search and semantic search using sentence transformers.",
+        "Implemented query correction, autocomplete, and AI-generated summaries using large language models.",
+        "Engineered a custom domain-specific tokenizer and semantic embedding index to enhance scientific search accuracy.",
+        "Designed a responsive frontend with Tailwind CSS and real-time UX enhancements (query correction and completion).",
+        "Containerized system using Docker and implemented scalable architecture, suitable for research and deployment.",
       ],
       links: {
-        demo: "#",
-        code: "#"
+        "Full-Stack Repo": "https://github.com/raviehasan/esempeha-search-engine",
+        "Web Demo Video": "http://ristek.link/video-presentasi-esempeha"
       },
       icon: <Star className="w-6 h-6" />
     }
@@ -261,16 +280,16 @@ export default function Home() {
       </motion.nav>
 
       {/* Hero Section */}
-      <section id="about" className="min-h-screen flex items-center justify-center tech-grid relative">
+      <section id="about" className="min-h-screen flex items-center justify-center tech-grid relative px-2 sm:px-4">
         <div className="absolute inset-0 bg-gradient-radial from-accent/10 via-transparent to-transparent"></div>
-        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+        <div className="max-w-4xl mx-auto px-2 sm:px-4 md:px-6 text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
           >
             <motion.h1 
-              className="text-5xl md:text-7xl font-bold mb-6"
+              className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 break-words leading-tight"
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               transition={{ duration: 0.8, delay: 0.5 }}
@@ -278,7 +297,7 @@ export default function Home() {
               <span className="gradient-text">Ravie Hasan Abud</span>
             </motion.h1>
             <motion.p 
-              className="text-xl md:text-2xl text-text-muted mb-8"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl text-text-muted mb-6 sm:mb-8"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
@@ -286,7 +305,7 @@ export default function Home() {
               Computer Science Student | AI, ML, and Software Development Enthusiast
             </motion.p>
             <motion.p 
-              className="text-lg text-text-muted mb-12 max-w-3xl mx-auto leading-relaxed"
+              className="text-sm sm:text-base md:text-base lg:text-lg text-text-muted mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed px-2"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1 }}
@@ -296,58 +315,63 @@ export default function Home() {
 
             {/* Social Links */}
             <motion.div 
-              className="flex justify-center space-x-6"
+              className="flex flex-wrap justify-center gap-4 sm:gap-6"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 1.4 }}
             >
               <motion.a 
                 href="mailto:ravieabud@gmail.com" 
-                className="social-link group"
+                className="social-link group flex-col sm:flex-row"
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 whileTap={{ scale: 0.95 }}
                 title="Email"
               >
-                <Mail size={24} className="group-hover:text-accent transition-colors" />
+                <Mail size={20} className="group-hover:text-accent transition-colors mb-1 sm:mb-0 sm:mr-2 w-5 h-5 sm:w-6 sm:h-6" />
+                <span className="text-xs sm:text-sm">Email</span>
               </motion.a>
               <motion.a 
                 href="https://linkedin.com/in/ravieabud" 
-                className="social-link group"
+                className="social-link group flex-col sm:flex-row"
                 whileHover={{ scale: 1.1, rotate: -5 }}
                 whileTap={{ scale: 0.95 }}
                 title="LinkedIn"
               >
-                <Linkedin size={24} className="group-hover:text-accent transition-colors" />
+                <Linkedin size={20} className="group-hover:text-accent transition-colors mb-1 sm:mb-0 sm:mr-2 w-5 h-5 sm:w-6 sm:h-6" />
+                <span className="text-xs sm:text-sm">LinkedIn</span>
               </motion.a>
               <motion.a 
                 href="https://github.com/raviehasan" 
-                className="social-link group"
+                className="social-link group flex-col sm:flex-row"
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 whileTap={{ scale: 0.95 }}
                 title="GitHub"
               >
-                <Github size={24} className="group-hover:text-accent transition-colors" />
+                <Github size={20} className="group-hover:text-accent transition-colors mb-1 sm:mb-0 sm:mr-2 w-5 h-5 sm:w-6 sm:h-6" />
+                <span className="text-xs sm:text-sm">GitHub</span>
               </motion.a>
               <motion.a 
                 href="https://medium.com/@ravieabud" 
-                className="social-link group"
+                className="social-link group flex-col sm:flex-row"
                 whileHover={{ scale: 1.1, rotate: -5 }}
                 whileTap={{ scale: 0.95 }}
                 title="Medium"
               >
-                <BookOpen size={24} className="group-hover:text-accent transition-colors" />
+                <BookOpen size={20} className="group-hover:text-accent transition-colors mb-1 sm:mb-0 sm:mr-2 w-5 h-5 sm:w-6 sm:h-6" />
+                <span className="text-xs sm:text-sm">Medium</span>
               </motion.a>
               <motion.a 
                 href="/CV - Ravie Hasan Abud.pdf" 
                 download="CV - Ravie Hasan Abud.pdf"
-                className="social-link group bg-accent/10 border-accent/30"
+                className="social-link group bg-accent/10 border-accent/30 flex-col sm:flex-row"
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 whileTap={{ scale: 0.95 }}
                 title="Download CV"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Download size={24} className="group-hover:text-accent transition-colors" />
+                <Download size={20} className="group-hover:text-accent transition-colors mb-1 sm:mb-0 sm:mr-2 w-5 h-5 sm:w-6 sm:h-6" />
+                <span className="text-xs sm:text-sm">CV</span>
               </motion.a>
             </motion.div>
           </motion.div>
@@ -429,11 +453,11 @@ export default function Home() {
                 viewport={{ once: true }}
               >
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                  <div>
+                  <div className="flex-1">
                     <h3 className="text-2xl font-bold mb-1">{exp.role}</h3>
                     <p className="text-accent text-lg">{exp.company}</p>
                   </div>
-                  <span className="text-text-muted font-mono bg-accent/10 px-3 py-1 rounded-full">{exp.period}</span>
+                  <span className="text-text-muted font-mono bg-accent/10 px-3 py-1 rounded-full text-sm mt-2 md:mt-0 self-start whitespace-nowrap">{exp.period}</span>
                 </div>
                 {exp.courses && (
                   <div className="mb-4">
@@ -538,42 +562,42 @@ export default function Home() {
             >
               Soft Skills
             </motion.h2>
-            <div className="flex justify-center space-x-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3 px-4">
               <motion.div 
-                className="text-center p-4 bg-card-bg rounded-2xl border border-border hover:glow-card"
+                className="text-center p-3 sm:p-4 bg-card-bg rounded-2xl border border-border hover:glow-card"
                 whileHover={{ scale: 1.05, y: -5 }}
               >
-                <h3 className="text-xl font-semibold mb-1">Adaptability</h3>
+                <h3 className="text-sm sm:text-lg font-semibold mb-1">Adaptability</h3>
               </motion.div>
               <motion.div 
-                className="text-center p-4 bg-card-bg rounded-2xl border border-border hover:glow-card"
+                className="text-center p-3 sm:p-4 bg-card-bg rounded-2xl border border-border hover:glow-card"
                 whileHover={{ scale: 1.05, y: -5 }}
               >
-                <h3 className="text-xl font-semibold mb-1">Problem Solving</h3>
+                <h3 className="text-sm sm:text-lg font-semibold mb-1">Problem Solving</h3>
               </motion.div>
               <motion.div 
-                className="text-center p-4 bg-card-bg rounded-2xl border border-border hover:glow-card"
+                className="text-center p-3 sm:p-4 bg-card-bg rounded-2xl border border-border hover:glow-card"
                 whileHover={{ scale: 1.05, y: -5 }}
               >
-                <h3 className="text-xl font-semibold mb-1">Collaboration</h3>
+                <h3 className="text-sm sm:text-lg font-semibold mb-1">Collaboration</h3>
               </motion.div>
               <motion.div 
-                className="text-center p-4 bg-card-bg rounded-2xl border border-border hover:glow-card"
+                className="text-center p-3 sm:p-4 bg-card-bg rounded-2xl border border-border hover:glow-card"
                 whileHover={{ scale: 1.05, y: -5 }}
               >
-                <h3 className="text-xl font-semibold mb-1">Communication</h3>
+                <h3 className="text-sm sm:text-lg font-semibold mb-1">Communication</h3>
               </motion.div>
               <motion.div 
-                className="text-center p-4 bg-card-bg rounded-2xl border border-border hover:glow-card"
+                className="text-center p-3 sm:p-4 bg-card-bg rounded-2xl border border-border hover:glow-card"
                 whileHover={{ scale: 1.05, y: -5 }}
               >
-                <h3 className="text-xl font-semibold mb-1">Attention to Detail</h3>
+                <h3 className="text-sm sm:text-lg font-semibold mb-1">Attention to Detail</h3>
               </motion.div>
               <motion.div 
-                className="text-center p-4 bg-card-bg rounded-2xl border border-border hover:glow-card"
+                className="text-center p-3 sm:p-4 bg-card-bg rounded-2xl border border-border hover:glow-card"
                 whileHover={{ scale: 1.05, y: -5 }}
               >
-                <h3 className="text-xl font-semibold mb-1">Critical Thinking</h3>
+                <h3 className="text-sm sm:text-lg font-semibold mb-1">Critical Thinking</h3>
               </motion.div>
             </div>
           </motion.div>
