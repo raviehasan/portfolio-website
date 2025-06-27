@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Github, Linkedin, Mail, ExternalLink, ChevronDown, Download, BookOpen, Zap, Code, Brain, Star, Menu, X } from "lucide-react";
+import { Github, Linkedin, Mail, ExternalLink, ChevronDown, BookOpen, Zap, Code, Brain, Star, Menu, X } from "lucide-react";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("");
