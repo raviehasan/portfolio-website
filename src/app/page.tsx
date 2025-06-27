@@ -732,7 +732,7 @@ export default function Home() {
             transition={{ delay: 0.2 }}
             viewport={{ once: true }}
           >
-            © 2024 Ravie Hasan Abud. All rights reserved.
+            © 2025 Ravie Hasan Abud. All rights reserved.
           </motion.p>
         </div>
       </footer>
